@@ -3,6 +3,16 @@ void draw() {
 Then put his head on using drawBeeFace(x,y)
 Use Modulo to make the colors alternate 
 */
+for(int i=0;i<450;i+=21){
+  if(i%2==0){
+    fill(#000000);
+  }
+  else{
+    fill(#FEFF00);
+  }
+ellipse(i,i,60,60);
+  }
+drawBeeFace(450,450);
 }
 
 void drawFlower(int x, int y) {
@@ -39,7 +49,7 @@ void drawBeeFace(int BeeFaceX, int BeeFaceY) {
      ellipse(BeeFaceX, BeeFaceY+5, 20, 6);
 }
 
-void setup() {
+void setup() { 
      ellipseMode(CENTER);
      size(500, 500);
      background(160, 160, 160);
